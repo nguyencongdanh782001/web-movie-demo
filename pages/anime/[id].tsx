@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { BsBookmark } from 'react-icons/bs';
-import Header from '../../components/Header';
+import Header from 'components/Header';
 
 const DetailProduct = ({ movieDetail }: any) => {
   const [movieCurent, setMovieCurent] = useState([]);
@@ -112,8 +112,7 @@ const DetailProduct = ({ movieDetail }: any) => {
                 ))}
             </div>
           </section>
-
-          <section className='mt-[35px] mb-[28px] flex items-center'>
+          <section className='mt-[35px] mb-[35px] w-full'>
             <div className='w-full grid grid-cols-4 gap-5'>
               {movieCurent.length > 0 &&
                 movieCurent.map((item: any, index) => (
@@ -132,6 +131,11 @@ const DetailProduct = ({ movieDetail }: any) => {
                     </div>
                   </Link>
                 ))}
+            </div>
+            <div className='mt-[28px]'>
+              <p className='text-base font-bold text-black text-center'>
+                Built with ❤️ by Elshazlii
+              </p>
             </div>
           </section>
         </div>

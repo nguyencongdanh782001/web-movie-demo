@@ -2,8 +2,8 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useCallback, useState } from 'react';
-import Header from '../components/Header';
-import Pagination from '../components/Pagination/Pagination';
+import Header from 'components/Header';
+import Pagination from 'components/Pagination/Pagination';
 
 export default function Home({ movie }: any) {
   const router = useRouter();
